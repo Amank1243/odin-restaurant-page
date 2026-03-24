@@ -10,7 +10,6 @@ export default {
   },
   devtool: "eval-source-map",
   devServer: {
-    hot: false,
     watchFiles: ["./src/template.html"],
     open: true,
   },
