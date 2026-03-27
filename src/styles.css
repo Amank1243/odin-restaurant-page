@@ -1,0 +1,31 @@
+:root {
+    --sand-color: rgb(246, 185, 93);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--sand-color);
+}
+
+div.bar {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+div.bar.top {
+    height: 6vh;
+    gap: 20vw;
+    
+    background-color: var(--sand-color);
+}
+
+div.bar.bottom {
+    height: 10vh;
+    
+}
