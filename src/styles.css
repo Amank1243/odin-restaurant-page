@@ -1,5 +1,8 @@
 :root {
     --sand-color: rgb(246, 185, 93);
+    --light-ocean-color: rgb(9, 199, 237);
+    --medium-ocean-color: rgba(9, 199, 237, 0.75);
+    --dark-ocean-color: rgba(9, 199, 237, 0.463);
 }
 
 body {
@@ -27,5 +30,34 @@ div.bar.top {
 
 div.bar.bottom {
     height: 10vh;
+    
+}
+
+nav {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+nav button {
+    margin-top: 2vh;
+
+    background-color: var(--sand-color);
+    border: 0.1em white solid;
+
+    padding: 2vh 2vw;
+    border-radius: 1em;
+
+    font-size: 0.9em;
+}
+
+nav button:hover {
+    background-color: var(--dark-ocean-color);
+
+    padding: 2.05vh 2.05vw;
+    font-size: 1em;
+
+    font-weight: bold;
     
 }
