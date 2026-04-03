@@ -3,25 +3,65 @@
     --light-ocean-color: rgb(9, 199, 237);
     --medium-ocean-color: rgba(9, 199, 237, 0.75);
     --dark-ocean-color: rgba(9, 199, 237, 0.463);
+
+    --space-between-sections: 8vh
 }
 
 * {
     margin: 0;
     padding: 0;
 }
+/* ------- */
+/* FONTS   */
+/* ------- */
+h1 {
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 2.5em;
+}
+
+p {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+button {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* -------------- */
+/* GENERAL STYLES */
+/* -------------- */
 
 header {
     background-color: var(--sand-color);
 }
 
 div#content {
-    margin: 2vw 2vh;
-    background-color: var(--medium-ocean-color);
+    display: flex;
+    flex-direction: column;
 
+    margin: 1vw 1vh;
+    padding: 2vw 2vh;
+
+    gap: 1vh;
+
+    background-color: var(--medium-ocean-color);
     border-radius: 1em;
 }
 
-/*  */
+div:not(#content):not(.top) {
+    border: white dashed 0.3em;
+}
+
+/* -------------- */
+/* NAVIGATION BAR */
+/* -------------- */
 
 div.bar {
     display: flex;
@@ -70,8 +110,10 @@ div#restaurant_name {
 
     align-items: center;
     justify-content: center;
-
+    
     gap: 1vw;
+
+    padding-top: 1vh;
 }
 
 div#restaurant_name img {
@@ -90,4 +132,23 @@ div#about_section {
     display: flex;
     flex-direction: column;
 
+    align-items: center;
+
+    margin-top: var(--space-between-sections);
+    padding: 2vw 2vh;
+
+}
+/* ------------- */
+/* HOURS SECTION */
+/* ------------- */
+
+div#hours {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10v ;
+
+    margin-top: var(--space-between-sections);
 }
