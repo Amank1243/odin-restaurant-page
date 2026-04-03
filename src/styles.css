@@ -2,7 +2,7 @@
     --sand-color: rgb(246, 185, 93);
     --light-ocean-color: rgb(9, 199, 237);
     --medium-ocean-color: rgba(9, 199, 237, 0.75);
-    --dark-ocean-color: rgba(9, 199, 237, 0.463);
+    --dark-ocean-color: rgba(0, 145, 255, 0.415);
 
     --space-between-sections: 8vh
 }
@@ -56,7 +56,9 @@ div#content {
 }
 
 div:not(#content):not(.top) {
-    border: white dashed 0.3em;
+    border: 0.8em solid transparent;
+    border-radius: 1.5em;
+    background: linear-gradient(45deg, #ff7b00, #ffd166, var(--medium-ocean-color)) border-box;
 }
 
 /* -------------- */
@@ -108,6 +110,9 @@ nav button:hover {
 div#restaurant_name {
     display: flex;
 
+    width: fit-content;
+    align-self: center;
+
     align-items: center;
     justify-content: center;
     
@@ -143,12 +148,17 @@ div#about_section {
 /* ------------- */
 
 div#hours {
+    width: fit-content;
+
     display: flex;
+
+    align-self: center;
 
     align-items: center;
     justify-content: center;
 
-    padding: 10v ;
+    padding: 2vh;
+    gap: 2em;
 
     margin-top: var(--space-between-sections);
 }
