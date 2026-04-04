@@ -1,3 +1,12 @@
 import "./styles.css";
+import { loadHomeContent } from "./home.js";
 
-console.log("Hello world");
+let buttonStates = {
+    homeOn: true,
+    menuOn: false,
+    contactOn: false,
+};
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    loadHomeContent();
+});
