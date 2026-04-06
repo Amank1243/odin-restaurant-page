@@ -1,4 +1,4 @@
-export function loadHomeContent() {
+export function initialPageLoad() {
 
     
 

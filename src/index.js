@@ -1,5 +1,5 @@
 import "./styles.css";
-import { loadHomeContent } from "./home.js";
+import { initialPageLoad } from "./home.js";
 
 let buttonStates = {
     homeOn: true,
@@ -8,5 +8,5 @@ let buttonStates = {
 };
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    loadHomeContent();
+    initialPageLoad();
 });

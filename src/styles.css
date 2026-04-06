@@ -40,6 +40,10 @@ button {
 
 header {
     background-color: var(--sand-color);
+    border-radius: 1em;
+
+    margin: 1vw 1vh;
+
 }
 
 div#content {
@@ -77,6 +81,7 @@ div.bar.top {
     gap: 20vw;
     
     background-color: var(--sand-color);
+    border-radius: 1em;
 }
 
 nav {
