@@ -7,6 +7,6 @@ let buttonStates = {
     contactOn: false,
 };
 
-document.addEventListener("DOMContentLoaded", ()=>{
-    initialPageLoad();
-});
+// document.addEventListener("DOMContentLoaded", ()=>{
+//     initialPageLoad();
+// });

@@ -10,6 +10,8 @@
 * {
     margin: 0;
     padding: 0;
+
+    scrollbar-width: none;
 }
 /* ------- */
 /* FONTS   */
@@ -166,4 +168,9 @@ div#hours {
     gap: 2em;
 
     margin-top: var(--space-between-sections);
+}
+
+img#beach_salad {
+    height: 25vw;
+    width: auto;
 }
