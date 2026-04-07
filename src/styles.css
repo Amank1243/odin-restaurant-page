@@ -174,3 +174,7 @@ img#beach_salad {
     height: 25vw;
     width: auto;
 }
+
+div#food-section {
+    display: flex;
+}
