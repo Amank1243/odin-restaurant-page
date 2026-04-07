@@ -24,7 +24,7 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/template.html",
-      favicon: "../images/beach.png",
+      favicon: "./images/beach.png",
     }),
   ],
   module: {
