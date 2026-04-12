@@ -4,7 +4,12 @@ export function initialPageLoad() {
 
     const DIVCONTENT = document.querySelector("div#content");
 
-    DIVCONTENT.innerHTML = `
+    DIVCONTENT.innerHTML = htmlContent;
+
+    console.log("Hello from home.js");
+};
+
+const htmlContent = `
         <div id="restaurant_name">
             <img src="/coconut-drink.png" alt="Coconut Drink">
             <!-- <a href="https://www.flaticon.com/free-icons/vacation" title="vacation icons">Vacation icons created by Freepik - Flaticon</a> -->
@@ -40,6 +45,3 @@ export function initialPageLoad() {
             Sunday: Gone Surfing - Back Soon-ish</p>
         </div>
     `;
-
-    console.log("Hello from home.js");
-};
