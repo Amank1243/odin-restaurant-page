@@ -1,5 +1,11 @@
 import "./styles.css";
-import { initialPageLoad } from "./home.js";
+import { loadHomeContent } from "./home.js";
+import { loadMenuContent } from "./menu.js";
+
+const homeButton = document.querySelector("#homeButton");
+const menuButton = document.querySelector("#menuButton");
+const contactButton = document.querySelector("#contactButton");
+
 
 let buttonStates = {
     homeOn: true,
@@ -8,5 +14,13 @@ let buttonStates = {
 };
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    initialPageLoad();
+    loadHomeContent();
 });
+
+homeButton.addEventListener("click", ()=>{
+    loadHomeContent();
+})
+
+menuButton.addEventListener("click", ()=>{
+    loadMenuContent();
+})

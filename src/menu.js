@@ -1,7 +1,8 @@
 export function loadMenuContent() {
-    document.innerHTML = htmlContent;
+    divContent.innerHTML = htmlContent;
 };
 
+const divContent = document.querySelector("div#content");
 const htmlContent = `
         <div id="restaurant_name">
             <img src="/coconut-drink.png" alt="Coconut Drink">
