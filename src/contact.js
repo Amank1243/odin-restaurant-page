@@ -1,15 +1,18 @@
+import coconutDrink from "../images/coconut-drink.png";
+
+
 export function loadContactContent() {
     divContent.innerHTML = htmlContent;
 };
 
 const divContent = document.querySelector("div#content");
 const htmlContent = ` <div id="restaurant_name">
-            <img src="/coconut-drink.png" alt="Coconut Drink">
+            <img src="${coconutDrink}" alt="Coconut Drink">
             <!-- <a href="https://www.flaticon.com/free-icons/vacation" title="vacation icons">Vacation icons created by Freepik - Flaticon</a> -->
         
             <h1><strong>!Contact Us!</strong></h1>
         
-            <img id="left" src="/coconut-drink.png" alt="Coconut Drink">
+            <img id="left" src="${coconutDrink}" alt="Coconut Drink">
             <!-- <a href="https://www.flaticon.com/free-icons/vacation" title="vacation icons">Vacation icons created by Freepik - Flaticon</a> -->
         </div>
 
