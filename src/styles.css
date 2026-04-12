@@ -194,3 +194,9 @@ div div#info.info {
     border-radius: 1.5em;
     background: var(--sand-color);
 }
+
+div.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
