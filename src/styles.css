@@ -178,3 +178,19 @@ img#beach_salad {
 div#food-section {
     display: flex;
 }
+
+div.contactSection {
+    display: flex;
+    width: 35vw;
+    height: 18vh;
+
+    gap: 6vw;
+
+    align-self: center;
+    
+}
+
+div div#info.info {
+    border-radius: 1.5em;
+    background: var(--sand-color);
+}
