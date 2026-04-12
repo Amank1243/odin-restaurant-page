@@ -15,9 +15,6 @@ export default {
   },
   devtool: "eval-source-map",
   devServer: {
-    static: {
-      directory: path.join(__dirname, "images"),
-    },
     watchFiles: ["./src/template.html"],
     open: true,
   },

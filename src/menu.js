@@ -1,3 +1,9 @@
+import lobster from "../images/beach_lobster.jpeg";
+import coconutDrink from "../images/coconut-drink.png";
+import salad from "../images/beach_salad.jpg";
+import beachPlate from "../images/beach_surf_plate.jpg"
+
+
 export function loadMenuContent() {
     divContent.innerHTML = htmlContent;
 };
@@ -5,20 +11,18 @@ export function loadMenuContent() {
 const divContent = document.querySelector("div#content");
 const htmlContent = `
         <div id="restaurant_name">
-            <img src="/coconut-drink.png" alt="Coconut Drink">
-            <!-- <a href="https://www.flaticon.com/free-icons/vacation" title="vacation icons">Vacation icons created by Freepik - Flaticon</a> -->
+            <img src="${coconutDrink}" alt="Coconut Drink">
         
             <h1><strong>Menu</strong></h1>
         
-            <img id="left" src="/coconut-drink.png" alt="Coconut Drink">
-            <!-- <a href="https://www.flaticon.com/free-icons/vacation" title="vacation icons">Vacation icons created by Freepik - Flaticon</a> -->
+            <img id="left" src="${coconutDrink}" alt="Coconut Drink">
         
         </div>
 
         <div id="food-section">
             <div>
                 <h2>Surfin Salad - $12.50</h2>
-                <img id="beach_salad" src="/beach_salad.jpg" alt="Colorful salad resting on a beach towel, with a side of lemon and lime on a wooden fish like plate, with clear skies and a bright blue beach in the background">
+                <img id="beach_salad" src="${salad}" alt="Colorful salad resting on a beach towel, with a side of lemon and lime on a wooden fish like plate, with clear skies and a bright blue beach in the background">
             </div>
 
             <div>
@@ -36,7 +40,7 @@ const htmlContent = `
         <div id="food-section">
             <div>
                 <h2>Costal Lobster - $28.31</h2>
-                <img id="costal_lobster" src="/beach_lobster.jpeg" alt="Lobster with a lemon and some salad on the side, with a bold, black tree resting in the foreground, a light blue ocean in the middle ground, and mountains in the background">
+                <img id="costal_lobster" src="${lobster}" alt="Lobster with a lemon and some salad on the side, with a bold, black tree resting in the foreground, a light blue ocean in the middle ground, and mountains in the background">
             </div>
 
             <div>
@@ -68,7 +72,7 @@ const htmlContent = `
         <div id="food-section">
             <div>
                 <h2>Surf'n Surf Plate - $14.95</h2>
-                <img id="beach_plate" src="/beach_surf_plate.jpg" alt="A plate of octopus with a plethora of colorful fruits to go along with it. The plate is resting on a colorful tribal blanket, resting where a bright green tropical forest and turquoise ocean meet ">
+                <img id="beach_plate" src="${beachPlate}" alt="A plate of octopus with a plethora of colorful fruits to go along with it. The plate is resting on a colorful tribal blanket, resting where a bright green tropical forest and turquoise ocean meet ">
             </div>
             
             <div>
